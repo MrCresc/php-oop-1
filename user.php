@@ -26,11 +26,11 @@
     {
       $thisDate = strtotime($this->dateOfBirth);
       $thisYear = date('Y',$thisDate);
-      return '<hr>Nome: '.$this->name.'<br>Cognome: '
-      .$this->surname.'<br>Anno di nascita: '
-      .$thisYear.'<br>Nazionalità: '
-      .$this->nationality.'<br>Indirizzo e-mail: '
-      .$this->email.'<br><hr>';
+      return '<hr><ul><li>Nome: '.$this->name.'</li><br><li>Cognome: '
+      .$this->surname.'</li><br><li>Anno di nascita: '
+      .$thisYear.'</li><br><li>Nazionalità: '
+      .$this->nationality.'</li><br><li>Indirizzo e-mail: '
+      .$this->email.'</li></ul><br><hr>';
     }
   };
 ?>
